@@ -9,6 +9,8 @@ public interface Firefighter {
    */
   CityNode getLocation();
 
+  void setLocation(CityNode location);
+
   /**
    * Get the total distance traveled by this firefighter. Distances should be represented using TaxiCab
    * Geometry: https://en.wikipedia.org/wiki/Taxicab_geometry AKA go via "edge" route not like a bird
@@ -16,4 +18,7 @@ public interface Firefighter {
    * @return the total distance traveled by this firefighter
    */
   int distanceTraveled();
-}
+
+  void setDistanceTraveled(int distanceTraveled);
+
+  }

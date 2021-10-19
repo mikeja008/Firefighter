@@ -2,12 +2,10 @@ package main.firefighters;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import main.api.CityNode;
 import main.api.Firefighter;
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
 public class FirefighterImpl implements Firefighter {
   private int distanceTraveled;
   private CityNode currLocation;
@@ -18,7 +16,18 @@ public class FirefighterImpl implements Firefighter {
   }
 
   @Override
+  public void setLocation(CityNode location) {
+    currLocation = location;
+  }
+
+  @Override
   public int distanceTraveled() {
     return distanceTraveled;
   }
+
+  @Override
+  public void setDistanceTraveled(int distanceTraveled) {
+    this.distanceTraveled = distanceTraveled;
+  }
+
 }
