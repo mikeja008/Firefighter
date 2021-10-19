@@ -38,6 +38,10 @@ public class CityNode {
     return yCoordinate;
   }
 
+  public int getDistanceFromCityNode(CityNode b){
+    return Math.abs((b.xCoordinate+b.yCoordinate)-(xCoordinate+yCoordinate));
+  }
+
   @Override
   public String toString() {
     return "CityNode{" + "xCoordinate=" + xCoordinate + ", yCoordinate=" + yCoordinate + '}';
