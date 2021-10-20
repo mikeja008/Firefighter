@@ -39,7 +39,7 @@ public class CityNode {
   }
 
   public int getDistanceFromCityNode(CityNode b){
-    return Math.abs((b.xCoordinate-xCoordinate)+(b.yCoordinate-yCoordinate));
+    return Math.abs(b.xCoordinate-xCoordinate)+Math.abs(b.yCoordinate-yCoordinate);
   }
 
   @Override
